@@ -1,0 +1,50 @@
+ 
+ -------------- celery@ip-160-153-253-28.ip.secureserver.net v5.0.2 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-4.4.0-201-generic-x86_64-with-glibc2.17 2021-01-28 18:39:30
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         CareMedicsBackend:0x7f7c72118f40
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . create_chatintent
+  . monitor_queries
+  . read_notifications
+  . refresh_paypal_token
+  . release_funds
+  . speech_to_text
+  . update_last_message
+
+ 
+ -------------- celery@ip-160-153-253-28.ip.secureserver.net v5.0.2 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-4.4.0-201-generic-x86_64-with-glibc2.17 2021-01-28 18:39:51
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         CareMedicsBackend:0x7fc4f5820f40
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 1 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . create_chatintent
+  . monitor_queries
+  . read_notifications
+  . refresh_paypal_token
+  . release_funds
+  . speech_to_text
+  . update_last_message
+

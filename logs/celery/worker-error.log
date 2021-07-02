@@ -1,0 +1,23 @@
+[2021-01-28 18:39:30,309: INFO/Beat] beat: Starting...
+[2021-01-28 18:39:30,350: INFO/MainProcess] Connected to redis://localhost:6379//
+[2021-01-28 18:39:30,379: INFO/MainProcess] mingle: searching for neighbors
+[2021-01-28 18:39:31,433: INFO/MainProcess] mingle: all alone
+[2021-01-28 18:39:31,455: WARNING/MainProcess] /home/imedifi/envmed/lib/python3.8/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2021-01-28 18:39:31,456: INFO/MainProcess] celery@ip-160-153-253-28.ip.secureserver.net ready.
+
+worker: Warm shutdown (MainProcess)
+[2021-01-28 18:39:48,143: INFO/MainProcess] beat: Shutting down...
+[2021-01-28 18:39:51,490: INFO/Beat] beat: Starting...
+[2021-01-28 18:39:51,530: INFO/MainProcess] Connected to redis://localhost:6379//
+[2021-01-28 18:39:51,551: INFO/MainProcess] mingle: searching for neighbors
+[2021-01-28 18:39:52,613: INFO/MainProcess] mingle: all alone
+[2021-01-28 18:39:52,625: WARNING/MainProcess] /home/imedifi/envmed/lib/python3.8/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2021-01-28 18:39:52,625: INFO/MainProcess] celery@ip-160-153-253-28.ip.secureserver.net ready.
+[2021-01-28 18:54:39,196: INFO/MainProcess] Received task: release_funds[abbb269c-1d92-4b03-9e66-5da7a99dea18]  
+[2021-01-28 18:54:39,238: INFO/MainProcess] Task release_funds[abbb269c-1d92-4b03-9e66-5da7a99dea18] succeeded in 0.034555442000055336s: 'funds release'

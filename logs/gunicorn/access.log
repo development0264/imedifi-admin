@@ -1,0 +1,585 @@
+Starting CareMedicsBackend as imedifi
+[2021-01-28 11:29:57 -0700] [1836] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/imedifi/imedify/backend/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/imedifi/imedify/backend
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: CareMedicsBackend
+  default_proc_name: CareMedicsBackend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f31098ae280>
+  on_reload: <function OnReload.on_reload at 0x7f31098ae3a0>
+  when_ready: <function WhenReady.when_ready at 0x7f31098ae4c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f31098ae5e0>
+  post_fork: <function Postfork.post_fork at 0x7f31098ae700>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f31098ae820>
+  worker_int: <function WorkerInt.worker_int at 0x7f31098ae940>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f31098aea60>
+  pre_exec: <function PreExec.pre_exec at 0x7f31098aeb80>
+  pre_request: <function PreRequest.pre_request at 0x7f31098aeca0>
+  post_request: <function PostRequest.post_request at 0x7f31098aed30>
+  child_exit: <function ChildExit.child_exit at 0x7f31098aee50>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f31098aef70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f31098420d0>
+  on_exit: <function OnExit.on_exit at 0x7f31098421f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-01-28 11:29:57 -0700] [1836] [INFO] Starting gunicorn 20.0.4
+[2021-01-28 11:29:57 -0700] [1836] [DEBUG] Arbiter booted
+[2021-01-28 11:29:57 -0700] [1836] [INFO] Listening at: unix:/home/imedifi/imedify/backend/gunicorn.sock (1836)
+[2021-01-28 11:29:57 -0700] [1836] [INFO] Using worker: sync
+[2021-01-28 11:29:57 -0700] [1843] [INFO] Booting worker with pid: 1843
+[2021-01-28 11:29:57 -0700] [1836] [DEBUG] 1 workers
+[2021-01-28 11:33:18 -0700] [1836] [INFO] Handling signal: term
+[2021-01-28 18:33:18 +0000] [1843] [INFO] Worker exiting (pid: 1843)
+[2021-01-28 11:33:18 -0700] [1836] [INFO] Shutting down: Master
+Starting CareMedicsBackend as imedifi
+[2021-01-28 11:33:19 -0700] [1962] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/imedifi/imedify/backend/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/imedifi/imedify/backend
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: CareMedicsBackend
+  default_proc_name: CareMedicsBackend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f24b0a4c280>
+  on_reload: <function OnReload.on_reload at 0x7f24b0a4c3a0>
+  when_ready: <function WhenReady.when_ready at 0x7f24b0a4c4c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f24b0a4c5e0>
+  post_fork: <function Postfork.post_fork at 0x7f24b0a4c700>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f24b0a4c820>
+  worker_int: <function WorkerInt.worker_int at 0x7f24b0a4c940>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f24b0a4ca60>
+  pre_exec: <function PreExec.pre_exec at 0x7f24b0a4cb80>
+  pre_request: <function PreRequest.pre_request at 0x7f24b0a4cca0>
+  post_request: <function PostRequest.post_request at 0x7f24b0a4cd30>
+  child_exit: <function ChildExit.child_exit at 0x7f24b0a4ce50>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f24b0a4cf70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f24b09e00d0>
+  on_exit: <function OnExit.on_exit at 0x7f24b09e01f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-01-28 11:33:19 -0700] [1962] [INFO] Starting gunicorn 20.0.4
+[2021-01-28 11:33:19 -0700] [1962] [DEBUG] Arbiter booted
+[2021-01-28 11:33:19 -0700] [1962] [INFO] Listening at: unix:/home/imedifi/imedify/backend/gunicorn.sock (1962)
+[2021-01-28 11:33:19 -0700] [1962] [INFO] Using worker: sync
+[2021-01-28 11:33:19 -0700] [1970] [INFO] Booting worker with pid: 1970
+[2021-01-28 11:33:19 -0700] [1962] [DEBUG] 1 workers
+[2021-01-28 11:33:23 -0700] [1962] [INFO] Handling signal: term
+[2021-01-28 18:33:23 +0000] [1970] [INFO] Worker exiting (pid: 1970)
+[2021-01-28 11:33:23 -0700] [1962] [INFO] Shutting down: Master
+Starting CareMedicsBackend as imedifi
+[2021-01-28 11:33:24 -0700] [1974] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/imedifi/imedify/backend/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/imedifi/imedify/backend
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: CareMedicsBackend
+  default_proc_name: CareMedicsBackend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5a159cb280>
+  on_reload: <function OnReload.on_reload at 0x7f5a159cb3a0>
+  when_ready: <function WhenReady.when_ready at 0x7f5a159cb4c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f5a159cb5e0>
+  post_fork: <function Postfork.post_fork at 0x7f5a159cb700>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5a159cb820>
+  worker_int: <function WorkerInt.worker_int at 0x7f5a159cb940>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5a159cba60>
+  pre_exec: <function PreExec.pre_exec at 0x7f5a159cbb80>
+  pre_request: <function PreRequest.pre_request at 0x7f5a159cbca0>
+  post_request: <function PostRequest.post_request at 0x7f5a159cbd30>
+  child_exit: <function ChildExit.child_exit at 0x7f5a159cbe50>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5a159cbf70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5a1595f0d0>
+  on_exit: <function OnExit.on_exit at 0x7f5a1595f1f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-01-28 11:33:24 -0700] [1974] [INFO] Starting gunicorn 20.0.4
+[2021-01-28 11:33:24 -0700] [1974] [DEBUG] Arbiter booted
+[2021-01-28 11:33:24 -0700] [1974] [INFO] Listening at: unix:/home/imedifi/imedify/backend/gunicorn.sock (1974)
+[2021-01-28 11:33:24 -0700] [1974] [INFO] Using worker: sync
+[2021-01-28 11:33:24 -0700] [1981] [INFO] Booting worker with pid: 1981
+[2021-01-28 11:33:24 -0700] [1974] [DEBUG] 1 workers
+[2021-01-28 11:34:15 -0700] [1974] [INFO] Handling signal: term
+[2021-01-28 18:34:15 +0000] [1981] [INFO] Worker exiting (pid: 1981)
+[2021-01-28 11:34:15 -0700] [1974] [INFO] Shutting down: Master
+Starting CareMedicsBackend as imedifi
+[2021-01-28 11:34:21 -0700] [2023] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/imedifi/imedify/backend/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/imedifi/imedify/backend
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: CareMedicsBackend
+  default_proc_name: CareMedicsBackend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f898832d280>
+  on_reload: <function OnReload.on_reload at 0x7f898832d3a0>
+  when_ready: <function WhenReady.when_ready at 0x7f898832d4c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f898832d5e0>
+  post_fork: <function Postfork.post_fork at 0x7f898832d700>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f898832d820>
+  worker_int: <function WorkerInt.worker_int at 0x7f898832d940>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f898832da60>
+  pre_exec: <function PreExec.pre_exec at 0x7f898832db80>
+  pre_request: <function PreRequest.pre_request at 0x7f898832dca0>
+  post_request: <function PostRequest.post_request at 0x7f898832dd30>
+  child_exit: <function ChildExit.child_exit at 0x7f898832de50>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f898832df70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f89882c10d0>
+  on_exit: <function OnExit.on_exit at 0x7f89882c11f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-01-28 11:34:21 -0700] [2023] [INFO] Starting gunicorn 20.0.4
+[2021-01-28 11:34:21 -0700] [2023] [DEBUG] Arbiter booted
+[2021-01-28 11:34:21 -0700] [2023] [INFO] Listening at: unix:/home/imedifi/imedify/backend/gunicorn.sock (2023)
+[2021-01-28 11:34:21 -0700] [2023] [INFO] Using worker: sync
+[2021-01-28 11:34:21 -0700] [2023] [DEBUG] 1 workers
+[2021-01-28 11:34:21 -0700] [2030] [INFO] Booting worker with pid: 2030
+[2021-01-28 11:39:22 -0700] [2023] [INFO] Handling signal: term
+[2021-01-28 18:39:22 +0000] [2030] [INFO] Worker exiting (pid: 2030)
+[2021-01-28 11:39:23 -0700] [2023] [INFO] Shutting down: Master
+Starting CareMedicsBackend as imedifi
+[2021-01-28 11:39:28 -0700] [2292] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/imedifi/imedify/backend/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/imedifi/imedify/backend
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: CareMedicsBackend
+  default_proc_name: CareMedicsBackend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f973b771280>
+  on_reload: <function OnReload.on_reload at 0x7f973b7713a0>
+  when_ready: <function WhenReady.when_ready at 0x7f973b7714c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f973b7715e0>
+  post_fork: <function Postfork.post_fork at 0x7f973b771700>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f973b771820>
+  worker_int: <function WorkerInt.worker_int at 0x7f973b771940>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f973b771a60>
+  pre_exec: <function PreExec.pre_exec at 0x7f973b771b80>
+  pre_request: <function PreRequest.pre_request at 0x7f973b771ca0>
+  post_request: <function PostRequest.post_request at 0x7f973b771d30>
+  child_exit: <function ChildExit.child_exit at 0x7f973b771e50>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f973b771f70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f973b7050d0>
+  on_exit: <function OnExit.on_exit at 0x7f973b7051f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-01-28 11:39:28 -0700] [2292] [INFO] Starting gunicorn 20.0.4
+[2021-01-28 11:39:28 -0700] [2292] [DEBUG] Arbiter booted
+[2021-01-28 11:39:28 -0700] [2292] [INFO] Listening at: unix:/home/imedifi/imedify/backend/gunicorn.sock (2292)
+[2021-01-28 11:39:28 -0700] [2292] [INFO] Using worker: sync
+[2021-01-28 11:39:28 -0700] [2301] [INFO] Booting worker with pid: 2301
+[2021-01-28 11:39:28 -0700] [2292] [DEBUG] 1 workers
+[2021-01-28 11:39:48 -0700] [2292] [INFO] Handling signal: term
+[2021-01-28 18:39:48 +0000] [2301] [INFO] Worker exiting (pid: 2301)
+[2021-01-28 11:39:48 -0700] [2292] [INFO] Shutting down: Master
+Starting CareMedicsBackend as imedifi
+[2021-01-28 11:39:49 -0700] [2321] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/imedifi/imedify/backend/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/imedifi/imedify/backend
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: CareMedicsBackend
+  default_proc_name: CareMedicsBackend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f438b3d0280>
+  on_reload: <function OnReload.on_reload at 0x7f438b3d03a0>
+  when_ready: <function WhenReady.when_ready at 0x7f438b3d04c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f438b3d05e0>
+  post_fork: <function Postfork.post_fork at 0x7f438b3d0700>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f438b3d0820>
+  worker_int: <function WorkerInt.worker_int at 0x7f438b3d0940>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f438b3d0a60>
+  pre_exec: <function PreExec.pre_exec at 0x7f438b3d0b80>
+  pre_request: <function PreRequest.pre_request at 0x7f438b3d0ca0>
+  post_request: <function PostRequest.post_request at 0x7f438b3d0d30>
+  child_exit: <function ChildExit.child_exit at 0x7f438b3d0e50>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f438b3d0f70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f438b3640d0>
+  on_exit: <function OnExit.on_exit at 0x7f438b3641f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-01-28 11:39:49 -0700] [2321] [INFO] Starting gunicorn 20.0.4
+[2021-01-28 11:39:49 -0700] [2321] [DEBUG] Arbiter booted
+[2021-01-28 11:39:49 -0700] [2321] [INFO] Listening at: unix:/home/imedifi/imedify/backend/gunicorn.sock (2321)
+[2021-01-28 11:39:49 -0700] [2321] [INFO] Using worker: sync
+[2021-01-28 11:39:49 -0700] [2330] [INFO] Booting worker with pid: 2330
+[2021-01-28 11:39:50 -0700] [2321] [DEBUG] 1 workers
+[2021-01-28 18:54:07 +0000] [2330] [DEBUG] GET /
+[2021-01-28 18:54:12 +0000] [2330] [DEBUG] GET /admin
+[2021-01-28 18:54:12 +0000] [2330] [DEBUG] GET /admin/
+[2021-01-28 18:54:23 +0000] [2330] [DEBUG] GET /admin/django_celery_results/taskresult/
+[2021-01-28 18:54:24 +0000] [2330] [DEBUG] GET /admin/jsi18n/
+[2021-01-28 18:54:31 +0000] [2330] [DEBUG] GET /admin/django_celery_beat/periodictask/
+[2021-01-28 18:54:32 +0000] [2330] [DEBUG] GET /admin/jsi18n/
+[2021-01-28 18:54:39 +0000] [2330] [DEBUG] POST /admin/django_celery_beat/periodictask/
+[2021-01-28 18:54:39 +0000] [2330] [DEBUG] GET /admin/django_celery_beat/periodictask/
+[2021-01-28 18:54:39 +0000] [2330] [DEBUG] GET /admin/jsi18n/
+[2021-01-28 18:54:46 +0000] [2330] [DEBUG] GET /admin/django_celery_beat/periodictask/
+[2021-01-28 18:54:47 +0000] [2330] [DEBUG] GET /admin/jsi18n/
+[2021-01-28 18:54:49 +0000] [2330] [DEBUG] GET /admin/django_celery_results/taskresult/
+[2021-01-28 18:54:49 +0000] [2330] [DEBUG] GET /admin/jsi18n/
+[2021-01-28 18:54:53 +0000] [2330] [DEBUG] GET /admin/django_celery_results/taskresult/
+[2021-01-28 18:54:54 +0000] [2330] [DEBUG] GET /admin/jsi18n/
+[2021-01-28 18:54:55 +0000] [2330] [DEBUG] GET /admin/django_celery_results/taskresult/
+[2021-01-28 18:54:55 +0000] [2330] [DEBUG] GET /admin/jsi18n/
+[2021-01-28 18:56:54 +0000] [2330] [DEBUG] GET /admin/django_celery_results/taskresult/
+[2021-01-28 18:56:55 +0000] [2330] [DEBUG] GET /admin/jsi18n/
+[2021-01-28 19:03:02 +0000] [2330] [DEBUG] GET /server-status
+Not Found: /server-status
+[2021-01-28 19:03:02 +0000] [2330] [DEBUG] GET /computeMetadata/v1/instance/
+Not Found: /computeMetadata/v1/instance/
